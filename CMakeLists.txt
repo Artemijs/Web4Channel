@@ -12,8 +12,13 @@ find_package(OpenGL REQUIRED)
 #additional h files
 include_directories(${GLAD}include/)
 
+
 #										library shit
 #lib h files
 target_include_directories(${PROJECT_NAME} PRIVATE ${GLFW})
+
 #lib .lib files
 target_link_libraries(${PROJECT_NAME} PRIVATE ${GLFW}lib/glfw3.lib)
+
+
+
